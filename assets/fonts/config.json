@@ -1,0 +1,84 @@
+{
+  "name": "FoodIcons",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "bb949f02bd55a4b012c03a9b8651f1b7",
+      "css": "favorite",
+      "code": 59393,
+      "src": "material"
+    },
+    {
+      "uid": "3392068839495c421c04eff00fc39cc2",
+      "css": "person",
+      "code": 59394,
+      "src": "material"
+    },
+    {
+      "uid": "82f44f1094ffd1d78093e76c33cc08cc",
+      "css": "access_time",
+      "code": 59395,
+      "src": "material"
+    },
+    {
+      "uid": "b3410f420c93dbe6b75834305a5068df",
+      "css": "local_pizza",
+      "code": 59396,
+      "src": "material"
+    },
+    {
+      "uid": "83b1dd96a1760c9d049edbba9b96f2b2",
+      "css": "check",
+      "code": 59397,
+      "src": "material"
+    },
+    {
+      "uid": "96fe5513fea857623db6621781ddd927",
+      "css": "enhanced_encryption",
+      "code": 59398,
+      "src": "material"
+    },
+    {
+      "uid": "4b5f64a4f1318aaa53a03429122caa50",
+      "css": "kitchen",
+      "code": 59399,
+      "src": "material"
+    },
+    {
+      "uid": "f6d72aa5ef8e8f0e553012af9a29a87e",
+      "css": "left",
+      "code": 61815,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3e674995cacc2b09692c096ea7eb6165",
+      "css": "megaphone",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "600124ae6e8bf1def3c3a2dc15f5a47a",
+      "css": "images",
+      "code": 62210,
+      "src": "fontawesome5"
+    },
+    {
+      "uid": "9d0c17f087fdd980cbdc8ba447ae328d",
+      "css": "tab_recipe",
+      "code": 59401,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "",
+        "width": 1000
+      },
+      "search": [
+        "tab_recipe"
+      ]
+    }
+  ]
+}
