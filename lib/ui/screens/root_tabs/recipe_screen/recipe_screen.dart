@@ -12,12 +12,12 @@ class RecipeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const BrandAppBar(title: 'Рецепты'),
+      appBar: BrandAppBar(title: 'Рецепты'),
       body: Padding(
         padding: paddingH16,
         child: ListView(
           children: [
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
             ...recipeShort
                 .map((e) => _RecipyShortCard(
                       recipe: e,
@@ -39,7 +39,7 @@ class _RecipyShortCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 24),
+      margin: EdgeInsets.only(bottom: 24),
       decoration: brandCardDecoration,
       child: Row(
         children: [
@@ -48,7 +48,7 @@ class _RecipyShortCard extends StatelessWidget {
             width: 149,
             child: Image.asset(recipe.image),
           ),
-          const SizedBox(width: 16),
+          SizedBox(width: 16),
           Expanded(
             child: Column(
               children: [
@@ -58,11 +58,11 @@ class _RecipyShortCard extends StatelessWidget {
                   maxLines: 2,
                   style: BrandTextStyles.h2,
                 ),
-                const SizedBox(height: 15),
+                SizedBox(height: 15),
                 Row(
                   children: [
-                    const Icon(FoodIcons.access_time, size: 20),
-                    const SizedBox(width: 11),
+                    Icon(FoodIcons.access_time, size: 20),
+                    SizedBox(width: 11),
                     Text(
                       recipe.time,
                       style: BrandTextStyles.defaultText.copyWith(

@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Otus Food',
       theme: ThemeData(scaffoldBackgroundColor: BrandColors.grey),
-      home: const RootPage(),
+      home: RootPage(),
     );
   }
 }

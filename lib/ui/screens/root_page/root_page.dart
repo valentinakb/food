@@ -18,7 +18,7 @@ class _RootPageState extends State<RootPage> {
   @override
   void initState() {
     timer = Timer(
-      const Duration(seconds: 3),
+      Duration(seconds: 3),
       () => setState(() => isLoaded = true),
     );
     super.initState();
@@ -33,9 +33,9 @@ class _RootPageState extends State<RootPage> {
   @override
   Widget build(BuildContext context) {
     if (isLoaded) {
-      return const RootRoute();
+      return RootRoute();
     } else {
-      return const SplashScreen();
+      return SplashScreen();
     }
   }
 }

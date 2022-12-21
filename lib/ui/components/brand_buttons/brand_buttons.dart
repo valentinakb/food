@@ -2,25 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:food/config/brand_colors.dart';
 import 'package:food/config/brand_text_style.dart';
 
-class BrandButtons {
-  static Widget textButton({
-    required String text,
-    required VoidCallback onTap,
-    required Color backgroundColor,
-    required Color textColor,
-    required Color borderColor,
-  }) =>
-      _TextButton(
-        text: text,
-        onTap: onTap,
-        backgroundColor: backgroundColor,
-        textColor: textColor,
-        borderColor: borderColor,
-      );
-}
+typedef BrandTextButton = _ButtonWithText;
 
-class _TextButton extends StatelessWidget {
-  const _TextButton({
+class _ButtonWithText extends StatelessWidget {
+  const _ButtonWithText({
     Key? key,
     required this.text,
     required this.onTap,
@@ -33,14 +18,17 @@ class _TextButton extends StatelessWidget {
   final Color? backgroundColor;
   final Color? textColor;
   final Color? borderColor;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: onTap,
       child: Container(
-        height: 48,
-        width: 232,
+        constraints: BoxConstraints(
+          maxHeight: 48,
+          minWidth: 232,
+        ),
         alignment: Alignment.center,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),

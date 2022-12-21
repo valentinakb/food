@@ -24,32 +24,32 @@ class BrandAppBar extends StatelessWidget implements PreferredSizeWidget {
         boxShadow: [
           BoxShadow(
             color: BrandColors.black.withOpacity(0.1),
-            offset: const Offset(0, 4),
+            offset: Offset(0, 4),
             blurRadius: 10,
           ),
         ],
       ),
       child: Container(
-        margin: const EdgeInsets.only(top: 30),
+        margin: EdgeInsets.only(top: 30),
         height: kToolbarHeight,
         child: Row(
           children: [
             SizedBox(
               child: GestureDetector(
-                onTap: () {},
+                onTap: onTap,
                 child: Icon(backButtonIcon, size: 24),
               ),
             ),
-            const Spacer(),
+            Spacer(),
             Text(
               title,
               style: BrandTextStyles.h3.copyWith(
                 color: BrandColors.darkGreen,
               ),
             ),
-            const Spacer(),
+            Spacer(),
             GestureDetector(
-              onTap: () {},
+              onTap: onTap,
               child: SizedBox(
                 child: Icon(megafon, size: 24),
               ),
@@ -61,5 +61,5 @@ class BrandAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }

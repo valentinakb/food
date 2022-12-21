@@ -39,7 +39,7 @@ class _RootRouteState extends State<RootRoute>
       backgroundColor: BrandColors.grey,
       body: TabBarView(
         controller: tabController,
-        physics: const NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
         children: const [
           RecipeScreen(),
           FridgeScreen(),
@@ -50,9 +50,9 @@ class _RootRouteState extends State<RootRoute>
       bottomNavigationBar: BrandNavigationBar(
           change: (value) {
             setState(() {});
-            tabController.animateTo(value);
+            tabController.animateTo(TabsType.values.indexOf(value));
           },
-          currentIndex: tabController.index),
+          currentTap: TabsType.values[tabController.index]),
     );
   }
 }
